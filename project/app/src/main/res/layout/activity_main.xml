@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpranav.pop5.MainActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<RelaLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="1">-->
+
+    <!--</RelaLayout>-->
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ImageViewId"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Load Image" />
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Capture"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ImageViewId"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ROTATE" />
+
+        <Button
+            android:id="@+id/noise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="REMOVE NOISE" />
+
+        <Button
+            android:id="@+id/edge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DETECT EDGES"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <Button
+                android:id="@+id/decrease"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/bright"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:alpha="2"
+                android:text="BRIGHTNESS" />
+            <Button
+                android:id="@+id/increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
